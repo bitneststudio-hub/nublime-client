@@ -29,9 +29,10 @@ Third-party components and their licenses are listed in NOTICE.
 
 ## Source availability for third-party libraries
 
-- `libXray` v26.6.27 / `Xray-core` v26.6.27: corresponding source archive published
-  as a release asset of this repository (see Releases). `BUILD.md` explains how it
-  maps to `app/android/app/libs/libXray.aar`.
+- `libXray` v26.6.27 / `Xray-core` v26.6.27: corresponding source archive:
+  https://github.com/bitneststudio-hub/nublime-client/releases/tag/libxray-source-v26.6.27
+  (vendored Go modules, build command, and `go version -m` of the shipped `.so` inside).
+  `BUILD.md` explains how it maps to `app/android/app/libs/libXray.aar`.
 - `hev-socks5-tunnel`: https://github.com/heiher/hev-socks5-tunnel
 - Dart/Flutter packages: pinned versions in `app/pubspec.lock`; license texts are
   shipped inside each package from pub.dev.

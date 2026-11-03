@@ -14,7 +14,7 @@ obtained from their upstream releases as described below.
 
 | Component | How to obtain |
 |---|---|
-| `app/android/app/libs/libXray.aar` | Build from https://github.com/XTLS/libXray at tag `v26.6.27` using `gomobile bind`; or download the release artifact of the same tag. |
+| `app/android/app/libs/libXray.aar` | Build from the corresponding-source archive published in this repository's Releases (https://github.com/bitneststudio-hub/nublime-client/releases/tag/libxray-source-v26.6.27); it contains the libXray source at tag `v26.6.27`, vendored Go modules, and `VERSIONS.txt` with the exact `gomobile bind` command and toolchain versions. |
 | `app/android/app/src/main/jniLibs/<abi>/libgojni.so` | Produced by the same `libXray` build (the AAR contains these; extract or copy them). |
 | `app/android/app/src/main/assets/geoip.dat`, `geosite.dat` | Optional. Only needed if you use geo-based routing rules; obtain from https://github.com/Loyalsoldier/v2ray-rules-dat (or any compatible source). The app runs without them. |
 
