@@ -8,7 +8,7 @@ published to satisfy the GNU GPL v3 (section 6) for every binary we distribute.
 | 4.1.42 (Android, versionCode 42142) | `v4.1.42` | first public source publication |
 | 4.1.16 – 4.1.42 | same as version | corresponding source archives: https://github.com/bitneststudio-hub/nublime-client/releases/tag/android-source-archives |
 | 4.1.43 (current) | v4.1.43 | this repository, tag `v4.1.43`; archive: https://github.com/bitneststudio-hub/nublime-client/releases/tag/v4.1.43 |
-| 4.1.0 – 4.1.15 | pending | being reconstructed from our private history; will be published here within 30 days of 2026-11-04. Written requests: support@nublime.com |
+| 4.1.0 – 4.1.15 | not distributed | development builds only; never offered to customers. First publicly distributed version is 4.1.16 (see archive release). |
 
 Third-party binaries are not stored in this repository; see `BUILD.md`.
 
