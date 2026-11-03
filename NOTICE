@@ -14,11 +14,13 @@ See the LICENSE file in this repository.
     warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
     the GNU General Public License (LICENSE file) for more details.
 
-    Complete corresponding source code (GPLv3 §6): the source code of the
-    exact version distributed to you is offered with every distribution and
-    will be published in the project's public source repository at first
-    public release; until then it is provided on written request through
-    the distribution channel.
+    Complete corresponding source code (GPLv3 §6):
+      https://github.com/bitneststudio-hub/nublime-client
+    Every release has a matching tag; per-version source archives are attached
+    to the releases page of that repository. libXray/Xray-core are built from
+    the published upstream sources, and the exact archive we built from (with
+    vendored Go modules, including the GPL modules in item 5) is a release
+    asset: .../releases/tag/libxray-source-v26.6.27
 
 This product bundles the following third-party components:
 
@@ -122,3 +124,17 @@ collected by the Flutter build toolchain.
 
 Trademark note: WildLime and the WildLime logo are the property of their
 owner. Xray, REALITY and related marks belong to their respective projects.
+
+-------------------------------------------------------------------------------
+Parts of this application are derived from hiddify-app
+   Project:   https://github.com/hiddify/hiddify-app
+   Version:   v4.1.2 (commit 54bc7eeb)
+   Licence:   GNU GPL v3 with additional terms under section 7
+              https://github.com/hiddify/hiddify-app/blob/v4.1.2/LICENSE.md
+   Changes:   see CHANGES-FROM-UPSTREAM.md (rebrand; core replaced with Xray via
+              libXray; new Android service layer; upstream update and
+              free-profile pipelines removed)
+   The additional terms that apply to the derived parts are reproduced in
+   SOURCE.md: attribution must be preserved, modified versions must be marked as
+   different from the original, and the Hiddify name and logos may not be used
+   to name or promote derived works.

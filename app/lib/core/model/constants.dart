@@ -3,11 +3,11 @@ import 'package:flutter/services.dart';
 
 abstract class Constants {
   static const appName = "WildLime";
-  static const githubUrl = "https://github.com/nublime/nublime-next";
-  static const licenseUrl = "https://github.com/nublime/nublime-next?tab=License-1-ov-file#readme";
-  static const githubReleasesApiUrl = "https://api.github.com/repos/nublime/nublime-next/releases";
-  static const githubLatestReleaseUrl = "https://github.com/nublime/nublime-app/releases/latest";
-  static const appCastUrl = "https://raw.githubusercontent.com/nublime/nublime-next/main/appcast.xml";
+  static const githubUrl = "https://github.com/bitneststudio-hub/nublime-client";
+  static const licenseUrl = "https://github.com/bitneststudio-hub/nublime-client/blob/main/LICENSE";
+  static const githubReleasesApiUrl = "https://api.github.com/repos/bitneststudio-hub/nublime-client/releases";
+  static const githubLatestReleaseUrl = "https://github.com/bitneststudio-hub/nublime-client/releases/latest";
+  static const appCastUrl = "https://raw.githubusercontent.com/bitneststudio-hub/nublime-client/main/appcast.xml";
   static const apiBaseUrl = "https://www.nublime.com/api";
   static const privacyPolicyUrl = "https://nublime.com/privacy/";
   static const termsAndConditionsUrl = "https://nublime.com/terms/";
