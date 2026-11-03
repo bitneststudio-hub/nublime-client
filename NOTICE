@@ -1,0 +1,124 @@
+WildLime VPN — Third-Party Notices
+===================================
+
+The WildLime VPN client is licensed under the GNU General Public License v3.
+See the LICENSE file in this repository.
+
+    Copyright (C) 2026 BitNest Studio (WildLime).
+
+    This program is free software: you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation, either version 3 of the License, or (at your
+    option) any later version. This program is distributed in the hope that
+    it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+    warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+    the GNU General Public License (LICENSE file) for more details.
+
+    Complete corresponding source code (GPLv3 §6): the source code of the
+    exact version distributed to you is offered with every distribution and
+    will be published in the project's public source repository at first
+    public release; until then it is provided on written request through
+    the distribution channel.
+
+This product bundles the following third-party components:
+
+-------------------------------------------------------------------------------
+1. Xray-core, version v26.6.27
+   Home:      https://github.com/XTLS/Xray-core
+   License:   Mozilla Public License Version 2.0
+              https://mozilla.org/MPL/2.0/
+   Corresponding Source: https://github.com/XTLS/libXray (tag v26.6.27);
+              Xray-core pinned at https://github.com/XTLS/Xray-core (tag v26.6.27).
+   Use:       The VPN transport core (VLESS / REALITY / XTLS-Vision), used
+              UNMODIFIED through the official libXray mobile binding (below).
+              Bundled inside android/app/libs/libXray.aar and the
+              android/app/src/main/jniLibs/*/libgojni.so shared objects.
+
+-------------------------------------------------------------------------------
+2. libXray, version v26.6.27
+   Home:      https://github.com/XTLS/libXray
+   License:   MIT License, Copyright (c) 2023-2025 XTLS
+   Use:       Official gomobile binding of Xray-core; compiled from the pinned
+              tags above (no third-party prebuilt artifacts) into
+              android/app/libs/libXray.aar.
+              Permission is hereby granted, free of charge, to any person
+              obtaining a copy of this software and associated documentation
+              files (the "Software"), to deal in the Software without
+              restriction, including without limitation the rights to use,
+              copy, modify, merge, publish, distribute, sublicense, and/or
+              sell copies of the Software, and to permit persons to whom the
+              Software is furnished to do so, subject to the following
+              conditions: The above copyright notice and this permission
+              notice shall be included in all copies or substantial portions
+              of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT
+              WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+              LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+              PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+              AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+              OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+              OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+              SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-------------------------------------------------------------------------------
+3. hev-socks5-tunnel
+   Home:      https://github.com/heiher/hev-socks5-tunnel
+   License:   MIT License, Copyright (c) 2022 hev
+   Use:       TUN→SOCKS5 data plane. arm64 shared object bundled at
+              android/app/src/main/jniLibs/arm64-v8a/libhev-socks5-tunnel.so
+              with the JNI bridge sources adapted under
+              android/app/src/main/kotlin/hev/.
+              Permission is hereby granted, free of charge, to any person
+              obtaining a copy of this software and associated documentation
+              files (the "Software"), to deal in the Software without
+              restriction, including without limitation the rights to use,
+              copy, modify, merge, publish, distribute, sublicense, and/or
+              sell copies of the Software, and to permit persons to whom the
+              Software is furnished to do so, subject to the following
+              conditions: The above copyright notice and this permission
+              notice shall be included in all copies or substantial portions
+              of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT
+              WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+              LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+              PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+              AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+              OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+              OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+              SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-------------------------------------------------------------------------------
+4. Noto Emoji (subsetted as Emoji.ttf)
+   Home:      https://github.com/googlefonts/noto-emoji
+   License:   SIL Open Font License 1.1, Copyright 2013 Google LLC
+              https://openfontlicense.org/
+   Use:       Country-flag emoji glyphs, subsetted with pyftsubset into
+              assets/fonts/Emoji.ttf (output file does not use a Reserved
+              Font Name). Subsetting provenance recorded in
+              assets/fonts/emoji_source.txt.
+
+-------------------------------------------------------------------------------
+5. github.com/sagernet/sing and github.com/sagernet/sing-shadowsocks
+   (statically linked inside the bundled libXray build)
+   Home:      https://github.com/SagerNet/sing
+              https://github.com/SagerNet/sing-shadowsocks
+   License:   GNU General Public License v3.0 or later
+              https://www.gnu.org/licenses/gpl-3.0.html
+   Versions:  sing v0.5.1, sing-shadowsocks v0.2.7
+              (as reported by `go version -m` on
+               android/app/libs/libXray.aar → jni/arm64-v8a/libgojni.so,
+               built with go1.26.3)
+   Use:       Shadowsocks protocol support inside Xray-core. Static-link
+              dependency of the shipped libgojni.so; the modules themselves
+              are unmodified.
+   Corresponding Source: https://github.com/SagerNet/sing (tag v0.5.1) and
+              https://github.com/SagerNet/sing-shadowsocks (tag v0.2.7);
+              the full source archive for this application's libXray build is
+              published with each release (see the source link on the download
+              page and the Play Store listing).
+
+-------------------------------------------------------------------------------
+Dart/Flutter dependencies retain their respective licenses (per-package
+LICENSE files in the published pub archives); the aggregated notices are
+collected by the Flutter build toolchain.
+
+Trademark note: WildLime and the WildLime logo are the property of their
+owner. Xray, REALITY and related marks belong to their respective projects.
