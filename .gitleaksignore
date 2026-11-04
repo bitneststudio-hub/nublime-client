@@ -1,0 +1,81 @@
+# gitleaks 忽略清单（R-PD-01 结案条件 iii）
+# 结论：app/lib/features/profile/details/json_editor.dart 的 exampleSchemaValues 是**上游 hiddify-app v4.1.2 的示例占位值**，
+# 与上游同文件该常量逐字节相同（整文件仅差图标控件与 dnstt 域名两处），且已与两个节点全部口令/密钥字段交叉核对，命中 0。
+# 不是本项目凭据，不需要轮换。依据：REVIEW_RESULT_裁定请求-PD7-PD8-PD12-排期-20261104_recheck.md
+# 只忽略这 4 行，**不按文件忽略**——该文件以后若真写入密钥必须能被扫出来。
+# 历史提交（v4.1.42 引入；常量 exampleSchemaValues 与上游 hiddify-app v4.1.2 逐字节相同）
+1caa71d1d8879a63a9a301f934bc4ecd92e63b6a:app/lib/features/profile/details/json_editor.dart:generic-api-key:106
+1caa71d1d8879a63a9a301f934bc4ecd92e63b6a:app/lib/features/profile/details/json_editor.dart:generic-api-key:142
+1caa71d1d8879a63a9a301f934bc4ecd92e63b6a:app/lib/features/profile/details/json_editor.dart:generic-api-key:177
+1caa71d1d8879a63a9a301f934bc4ecd92e63b6a:app/lib/features/profile/details/json_editor.dart:generic-api-key:179
+
+# release 附件（android-source-archives 16 包 + v4.1.43）中同一文件的同 4 行；
+# 指纹前缀 extracted/ 反映扫描时的根目录，换根目录后按同样的 <包名>/lib/... 重新生成即可。
+extracted/nublime-v4.1.16-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.16-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.16-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.16-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.17-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.17-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.17-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.17-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.18-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.18-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.18-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.18-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.19-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.19-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.19-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.19-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.20-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.20-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.20-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.20-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.21-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.21-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.21-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.21-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.24-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.24-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.24-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.24-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.25-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.25-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.25-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.25-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.26-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.26-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.26-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.26-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.28-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.28-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.28-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.28-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.32-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.32-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.32-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.32-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.33-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.33-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.33-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.33-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.39-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.39-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.39-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.39-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.40-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.40-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.40-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.40-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.41-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.41-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.41-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.41-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.42-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.42-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.42-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.42-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
+extracted/nublime-v4.1.43-source/lib/features/profile/details/json_editor.dart:generic-api-key:106
+extracted/nublime-v4.1.43-source/lib/features/profile/details/json_editor.dart:generic-api-key:142
+extracted/nublime-v4.1.43-source/lib/features/profile/details/json_editor.dart:generic-api-key:177
+extracted/nublime-v4.1.43-source/lib/features/profile/details/json_editor.dart:generic-api-key:179
