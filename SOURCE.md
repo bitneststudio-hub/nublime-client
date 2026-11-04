@@ -38,3 +38,9 @@ Third-party components and their licenses are listed in NOTICE.
 - `hev-socks5-tunnel`: https://github.com/heiher/hev-socks5-tunnel
 - Dart/Flutter packages: pinned versions in `app/pubspec.lock`; license texts are
   shipped inside each package from pub.dev.
+
+## Tag protection test tag
+
+`v0.0.0-ruleset-test` is **not a release**. It exists only to prove that tag
+protection is enforced (creation allowed, force-move and deletion rejected).
+It points at the commit that added `.gitleaksignore`.
